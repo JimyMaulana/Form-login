@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Form Login</title>
+</head>
+
+<body>
+    <div class="form-login">
+        <section class="form-left">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="content">
+                <div class="logo">
+                    <div class="box">N</div>
+                    <div class="text">Near</div>
+                </div>
+                <div class="tagline">
+                    <h1>
+                       find your dream career make your dreams come true only with the near job
+                    </h1>
+                    <p>
+                        Immediately check you dream career opportunity here
+                    </p>
+                </div>
+                <div class="line">
+                    <div class="line1 active"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="sosmed">
+                    <a href="">
+                    <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="">
+                    <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="">
+                    <i class="fa fa-linkedin"></i>
+                    </a>
+                  </div>
+                <footer>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                    <p>&copy; 2021 Near Job</p>
+                </footer>
+            </div>
+        </section>
+
+        <section class="right-bar">
+            <div class="content">
+                <h1>Let's Join us!</h1>
+                <p>Let's create your free account</p>
+                    <form>
+                        <div class="input-group">
+                            <label for="ursename">Ursename</label>
+                            <input type="text" id="ursename" placeholder="your name">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="youremail@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="your password">
+                        </div>
+                        <div class="other">
+                            <div class="input-group">
+                                <label for="agree">
+                                    <input type="checkbox" id="agree"> I agree with the rules
+                                </label>
+                            </div>
+                            <a href="#" class="forgot">Forgotten password?</a>
+                        </div>
+                        <button type="button" class="button dark-blue">Sign Up</button>
+                        <button type="button" class="button grey"><i class="facebook"></i>Sign Up With Google</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            const forgotPassword = document.querySelector('.forgot');
+            forgotPassword.addEventListener('click', () => {
+                const inpUser = prompt ("Masukan Change jika ingin mengubah, masukan reset jikan ingin mereset");
+                
+                if(inpUser ==="reset"){
+                    forgotPassword.setAttribute('href','reset-pass.html')
+                }
+                else if (inpUser === "Change") {
+                forgotPassword.setAttribute('href', 'change-pass.html')
+                } else {
+                alert('Masukkan kata kunci yang tepat!')
+                }
+            })
+        </script>
+</body>
+</html>
